@@ -51,7 +51,7 @@ function searchInTheRigth() {
 }
 
 mainButton.onclick = function () {
-  if (numInput.value === '' || numInput.value > 100 || numInput.value < 1) {
+  if (numInput.value === '' || numInput.value > 100 || numInput.value < 1 || numInput.value.isInteger() === false) {
     return;
   }
   binarySearch();
